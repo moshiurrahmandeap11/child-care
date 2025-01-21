@@ -1,7 +1,7 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,23 +9,23 @@
 
 
 .quicksand-font {
-  font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-body{
+body {
     background: rgb(247, 247, 247);
 }
 
 /* nav bar start */
 
-header{
+header {
     max-width: 100%;
     height: auto;
 }
 
-.navbar_container{
+.navbar_container {
     display: flex;
     justify-content: space-between;
     margin: 20px 140px;
@@ -33,11 +33,12 @@ header{
     gap: 186px;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
 }
-.logo_text{
+
+.logo_text {
     font-weight: 700;
     font-size: 2rem;
     line-height: 1.9rem;
@@ -46,50 +47,50 @@ header{
     margin-right: 20px;
 }
 
-.hamburger_menu{
+.hamburger_menu {
     display: none;
 }
 
 
-.navbar_container ul li{
+.navbar_container ul li {
     list-style: none;
     display: inline;
     margin-right: 1.3rem;
 }
 
-.navbar_container ul li a{
+.navbar_container ul li a {
     text-decoration: none;
 }
 
-.text{
+.text {
     font-weight: 700;
     font-size: 1.3rem;
     line-height: 1.9rem;
 }
 
-.text1{
+.text1 {
     font-weight: 500;
     font-size: 1.3rem;
     line-height: 1.9rem;
 }
 
-.navbar_container ul li .color{
+.navbar_container ul li .color {
     color: rgb(254, 163, 1);
 }
 
-.navbar_container ul li .color1{
+.navbar_container ul li .color1 {
     color: rgb(1, 172, 253);
 }
 
-.navbar_container ul li .color2{
+.navbar_container ul li .color2 {
     color: rgb(5, 212, 223);
 }
 
-.navbar_container ul li .color3{
+.navbar_container ul li .color3 {
     color: rgb(93, 88, 239);
 }
 
-.nav_btn{
+.nav_btn {
     font-weight: 600;
     font-size: 1.3rem;
     line-height: 1.9rem;
@@ -102,31 +103,40 @@ header{
     cursor: pointer;
     outline: none;
 }
+
 /* responsive for mobile */
 
 @media screen and (max-width: 576px) {
-    .navbar_container{
+    .navbar {
+        margin-bottom: 20px;
+    }
+
+    .navbar_container {
         margin: 0.7rem 1rem;
     }
-    .logo{
+
+    .logo {
         gap: 220px;
     }
-    .logo_text{
+
+    .logo_text {
         display: none;
     }
 
-    .hamburger_menu{
+    .hamburger_menu {
         display: inline-block;
     }
-    .hamburger_menu i{
+
+    .hamburger_menu i {
         font-size: 2rem;
         padding: 7px 4px;
     }
 
-    .navbar_container ul li{
+    .navbar_container ul li {
         display: none;
     }
-    .nav_button{
+
+    .nav_button {
         display: none;
     }
 
@@ -136,12 +146,12 @@ header{
 
 /* hero / banner section start */
 
-/* প্রাথমিক স্টাইল */
 .banner {
     width: 100%;
     height: auto;
     margin-bottom: 3.8rem;
 }
+
 .banner_container {
     width: 80%;
     margin: 0 auto;
@@ -149,42 +159,49 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
 .banner_textarea {
     margin-left: -2.3rem;
     max-width: 50%;
 }
+
 .banner_image {
     margin-right: -2.3rem;
     max-width: 45%;
 }
+
 .banner_heading {
     font-weight: 700;
     font-size: 3.5rem;
     line-height: 3.75rem;
     color: rgb(17, 17, 17);
-    width: 100%; /* পূর্ণ প্রস্থে করুন */
-    height: auto; /* উচ্চতা স্বয়ংক্রিয় করে দিন */
+    width: 100%;
+    height: auto;
     margin-bottom: 1.5rem;
-    text-align: left; /* টেক্সট বাম দিকে রাখুন */
-    margin-left: 0; /* মার্জিন ঠিক করুন */
+    text-align: left;
+    margin-left: 0;
 }
+
 .bannerspan1 {
     color: rgb(254, 163, 1);
 }
+
 .bannerspan2 {
     color: rgb(1, 172, 253);
 }
+
 .banner_description {
-    width: 100%; /* পূর্ণ প্রস্থে করুন */
-    height: auto; /* উচ্চতা স্বয়ংক্রিয় করে দিন */
+    width: 100%;
+    height: auto;
     font-weight: normal;
     font-size: 1.3rem;
     line-height: 1.55rem;
     color: rgb(17, 17, 17);
     text-align: left;
     margin-bottom: 1.5rem;
-    margin-left: 0; /* মার্জিন ঠিক করুন */
+    margin-left: 0;
 }
+
 .banner_btn {
     width: 197px;
     height: 50px;
@@ -198,28 +215,38 @@ header{
 
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
+    .banner {
+        padding-top: 1rem;
+        border-top: 0.5px solid rgb(254, 163, 1);
+    }
+
     .banner_container {
         flex-direction: column-reverse;
-        text-align: center; /* টেক্সট কেন্দ্রীভূত করুন */
+        text-align: center;
     }
-    .banner_textarea, .banner_image {
-        max-width: 100%; /* পূর্ণ প্রস্থে করুন */
-        margin: 0 auto; /* মার্জিন ঠিক করুন */
+
+    .banner_textarea,
+    .banner_image {
+        max-width: 100%;
+        margin: 0 auto;
     }
+
     .banner_image img {
         width: 70%;
     }
+
     .banner_heading {
-        width: 100%; /* পূর্ণ প্রস্থে করুন */
+        width: 100%;
         font-weight: 700;
         font-size: 2rem;
         line-height: 3rem;
         margin-bottom: 1.1rem;
         text-align: center;
-        margin-left: 0; /* মার্জিন ঠিক করুন */
+        margin-left: 0;
     }
+
     .banner_description {
-        width: 100%; /* পূর্ণ প্রস্থে করুন */
+        width: 100%;
         height: auto;
         font-weight: 500;
         font-size: 0.9rem;
