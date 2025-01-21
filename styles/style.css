@@ -133,3 +133,82 @@ header{
 }
 
 /* nav bar end with responsive */
+
+/* hero / banner section start */
+
+.banner{
+    width: 100%;
+    height: auto;
+    margin-bottom: 3.8rem;
+}
+.banner_container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner_textarea{
+    margin-left: -2.3rem;
+    max-width: 50%;
+}
+
+.banner_image{
+    margin-right: -2.3rem;
+    max-width: 45%;
+}
+
+.banner_heading{
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+    color: rgb(17, 17, 17);
+    width: 640px;
+    height: 183px;
+    margin-bottom: 1.5rem;
+}
+
+.bannerspan1{
+    color: rgb(254, 163, 1);
+}
+
+.bannerspan2{
+    color: rgb(1, 172, 253);
+}
+
+.banner_description{
+    width: 640px;
+    height: 50px;
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 1.55rem;
+    color: rgb(17, 17, 17);
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.banner_btn{
+    width: 197px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(17, 17, 17);
+    border-radius: 0.7rem;
+}
+
+/* responsive for mobile */
+
+@media screen and (max-width: 576px) {
+    .banner_container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .banner_textarea, .banner_image{
+        max-width: 100%;
+    }
+
+}
