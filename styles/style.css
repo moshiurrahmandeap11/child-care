@@ -1,0 +1,131 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body{
+    background: rgb(247, 247, 247);
+}
+
+/* nav bar start */
+
+header{
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 140px;
+    align-items: center;
+    gap: 186px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo_text{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.9rem;
+    color: rgb(17, 17, 17);
+    margin-left: 0.6rem;
+}
+
+.navbar_container ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 1.3rem;
+}
+
+.navbar_container ul li a{
+    text-decoration: none;
+}
+
+.text{
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+}
+
+.text1{
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+}
+
+.navbar_container ul li .color{
+    color: rgb(254, 163, 1);
+}
+
+.navbar_container ul li .color1{
+    color: rgb(1, 172, 253);
+}
+
+.navbar_container ul li .color2{
+    color: rgb(5, 212, 223);
+}
+
+.navbar_container ul li .color3{
+    color: rgb(93, 88, 239);
+}
+
+.nav_btn{
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 163, 1);
+    border-radius: 0.7rem;
+    width: 197px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.hamburger_menu{
+    /* display: none; */
+    display: none;
+}
+
+/* responsive for mobile */
+
+@media screen and (max-width: 576px) {
+    .navbar_container{
+        margin: 0.7rem 1rem;
+    }
+    .logo_text{
+        display: none;
+    }
+
+    .navbar_container ul li{
+        display: none;
+    }
+    .nav_button{
+        display: none;
+    }
+    .hamburger_menu{
+        display: block;
+        margin-left: -100px;
+    }
+    .hamburger_menu i{
+        font-size: 2rem;
+        padding: 7px 4px;
+    }
+}
+
+/* nav bar end with responsive */
