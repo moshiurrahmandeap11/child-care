@@ -498,6 +498,7 @@ marquee{
     outline: none;
     border-radius: 47px;
     background: rgb(60, 216, 232);
+    cursor: pointer;
 }
 
 .card1_heading {
@@ -545,6 +546,7 @@ marquee{
     border: none;
     outline: none;
     background: rgb(149, 178, 38);
+    cursor: pointer;
 }
 
 .card2_heading {
@@ -605,6 +607,7 @@ marquee{
     width: 197px;
     height: 50px;
     background: rgb(17, 17, 17);
+    cursor: pointer;
 }
 
 /* responsive for mobile */
