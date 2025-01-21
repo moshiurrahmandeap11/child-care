@@ -154,6 +154,14 @@ header {
     height: auto;
 }
 
+marquee{
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    letter-spacing: 2px;
+    background-color: rgb(254, 163, 1);
+}
+
 .banner_container {
     width: 80%;
     margin: 0 auto;
