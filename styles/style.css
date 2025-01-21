@@ -597,7 +597,6 @@ header {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 1rem;
         margin-bottom: 1.3rem;
-        margin-left: 20px;
     }
     .card1{
         display: none;
