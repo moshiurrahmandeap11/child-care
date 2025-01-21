@@ -596,9 +596,8 @@ header {
     .story_container{
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
-        margin: 0 1rem;
+        margin: 0 12px;
         margin-bottom: 1.3rem;
-        margin-left: -5px;
     }
     .card1{
         display: none;
