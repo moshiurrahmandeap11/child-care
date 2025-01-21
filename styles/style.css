@@ -43,7 +43,13 @@ header{
     line-height: 1.9rem;
     color: rgb(17, 17, 17);
     margin-left: 0.6rem;
+    margin-right: 20px;
 }
+
+.hamburger_menu{
+    display: none;
+}
+
 
 .navbar_container ul li{
     list-style: none;
@@ -96,20 +102,25 @@ header{
     cursor: pointer;
     outline: none;
 }
-
-.hamburger_menu{
-    /* display: none; */
-    display: none;
-}
-
 /* responsive for mobile */
 
 @media screen and (max-width: 576px) {
     .navbar_container{
-        margin: 0.7rem 1rem;
+        margin: 0.7rem 0;
+    }
+    .logo{
+        gap: 220px;
     }
     .logo_text{
         display: none;
+    }
+
+    .hamburger_menu{
+        display: inline-block;
+    }
+    .hamburger_menu i{
+        font-size: 2rem;
+        padding: 7px 4px;
     }
 
     .navbar_container ul li{
@@ -118,14 +129,7 @@ header{
     .nav_button{
         display: none;
     }
-    .hamburger_menu{
-        display: block;
-        margin-left: -100px;
-    }
-    .hamburger_menu i{
-        font-size: 2rem;
-        padding: 7px 4px;
-    }
+
 }
 
 /* nav bar end with responsive */
