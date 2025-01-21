@@ -595,9 +595,10 @@ header {
 @media screen and (max-width: 576px) {
     .story_container{
         grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
         margin: 0 1rem;
         margin-bottom: 1.3rem;
-        margin-left: -10px;
+        margin-left: -5px;
     }
     .card1{
         display: none;
@@ -647,7 +648,7 @@ header {
         height: 179px;
         border-radius: 16px;
         background: rgb(255, 255, 255);
-        margin-left: -10px;
+        margin-left: 0;
     }
 
     .card4 {
@@ -666,7 +667,19 @@ header {
         height: 179px;
         border-radius: 16px;
         background: rgb(255, 255, 255);
-        margin-left: -10px;
+        margin-left: 0;
     }
     
+    .below_btn button {
+        border-radius: 12px;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.9rem;
+        color: rgb(255, 255, 255);
+        border: none;
+        outline: none;
+        width: 134px;
+        height: 30px;
+        background: rgb(17, 17, 17);
+    }
 }
