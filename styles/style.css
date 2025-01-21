@@ -422,6 +422,15 @@ header {
         font-size: 1rem;
         line-height: 1.5rem;
     }
+
+    .curriculam_description {
+        font-weight: 500;
+        font-size: 0.6rem;
+        line-height: 1.2rem;
+        color: rgb(128, 128, 128);
+        margin-bottom: 2.4rem;
+        text-align: center;
+    }
 }
 
 /* standard curriculam end with responsive */
