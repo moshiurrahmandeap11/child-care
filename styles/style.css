@@ -1,5 +1,8 @@
-/* google font */
+/* google quicksand font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* google raleway font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -212,6 +215,7 @@ header {
     border-radius: 0.7rem;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 /* responsive for mobile */
@@ -377,12 +381,19 @@ header {
     background-color: rgb(254, 163, 1);
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.arrow_button:hover {
+    background-color: transparent;
+    border: 2px solid rgb(254, 163, 1);
 }
 
 .arrow_button button {
     background-color: transparent;
     border: none;
 }
+
 
 
 .arrow_button img {
@@ -402,7 +413,7 @@ header {
         margin-bottom: 1rem;
     }
 
-    .arrow_container{
+    .arrow_container {
         display: none;
     }
 
@@ -414,3 +425,248 @@ header {
 }
 
 /* standard curriculam end */
+
+/* our stories section start */
+
+.stories {
+    width: 100%;
+    height: auto;
+    background: url(https://i.ibb.co.com/64MTZ5B/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+
+.story_title {
+    font-weight: 700;
+    font-size: 2.9rem;
+    line-height: 3.5rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5rem;
+}
+
+.story_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    margin: 0 280px;
+    margin-bottom: 5rem;
+}
+
+.story_container img {
+    border-radius: 16px 16px 0px 0px;
+}
+
+.card1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.btn_holder1 {
+    margin-left: 2.4rem;
+    margin-top: -35px;
+    margin-bottom: 2.4rem;
+}
+
+.card1_btn {
+    font-family: "Raleway", serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    border-radius: 47px;
+    background: rgb(60, 216, 232);
+}
+
+.card1_heading {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: rgb(0, 0, 0);
+    margin-left: 2.4rem;
+    margin-bottom: 3.2rem;
+}
+
+.card1_description {
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    color: rgb(102, 102, 102);
+    font-family: "Raleway", serif;
+    margin-bottom: 2.2rem;
+    margin-left: 2.4rem;
+}
+
+.card2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 290px;
+    height: auto;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.btn_holder2 {
+    margin-left: 2.4rem;
+    margin-top: -1.8rem;
+    margin-bottom: 2.4rem;
+}
+
+.card2_btn {
+    font-family: "Raleway", serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    color: rgb(255, 255, 255);
+    padding: 0.55rem 1.1rem;
+    border-radius: 47.93px;
+    border: none;
+    outline: none;
+    background: rgb(149, 178, 38);
+}
+
+.card2_heading {
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    color: rgb(0, 0, 0);
+    margin-left: 2.4rem;
+    margin-right: 3.4rem;
+}
+
+.card3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    width: 290px;
+    height: auto;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    margin-left: -115px;
+}
+
+.card3 .card2_btn {
+    background-color: rgb(93, 88, 240);
+}
+
+.card4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 290px;
+    height: auto;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.card5 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    width: 290px;
+    height: auto;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    margin-left: -115px;
+}
+
+.below_btn {
+    text-align: center;
+    padding-bottom: 3.8rem;
+}
+
+.below_btn button {
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    width: 197px;
+    height: 50px;
+    background: rgb(17, 17, 17);
+}
+
+/* responsive for mobile */
+
+@media screen and (max-width: 576px) {
+    .story_container{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 1rem;
+        margin-bottom: 1.3rem;
+        margin-left: 20px;
+    }
+    .card1{
+        display: none;
+    }
+
+    .story_container img{
+        width: 173px;
+        height: 105px;
+    }
+
+    .card2 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 173px;
+        height: 179px;
+    }
+
+    .btn_holder2 {
+        margin-left: 1.4rem;
+        margin-top: -1.2rem;
+        margin-bottom: 11px;
+    }
+    
+    .card2_btn {
+        font-family: "Raleway", serif;
+        font-weight: 500;
+        font-size: 9px;
+        line-height: 17px;
+        padding: 5px 10px;
+        border-radius: 28px;
+    }
+
+    .card2_heading {
+        font-weight: 700;
+        font-size: 9px;
+        line-height: 17px;
+        color: rgb(0, 0, 0);
+        margin-left: 1.4rem;
+        margin-right: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .card3 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        width: 173px;
+        height: 179px;
+        border-radius: 16px;
+        background: rgb(255, 255, 255);
+        margin-left: 0;
+    }
+
+    .card4 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width: 173px;
+        height: 179px;
+        border-radius: 16px;
+        background: rgb(255, 255, 255);
+    }
+    
+    .card5 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        width: 173px;
+        height: 179px;
+        border-radius: 16px;
+        background: rgb(255, 255, 255);
+        margin-left: 0;
+    }
+    
+}
