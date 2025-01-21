@@ -260,7 +260,7 @@ header {
     }
 }
 
-/* hero / banner section end */
+/* hero / banner section end with responsive */
 
 /* standard curriculam start */
 
@@ -424,7 +424,7 @@ header {
     }
 }
 
-/* standard curriculam end */
+/* standard curriculam end with responsive */
 
 /* our stories section start */
 
@@ -683,7 +683,7 @@ header {
     }
 }
 
-/* our story end */
+/* our story end with responsive */
 
 /* footer start */
 
@@ -707,6 +707,14 @@ header {
 .footer_div3 {
     flex: 1; 
     margin: 0 20px; 
+}
+
+.footer_div2{
+    margin-left: 230px;
+}
+
+.footer_div3{
+    margin-left: 120px;
 }
 
 .footer_logo {
@@ -792,6 +800,15 @@ header {
     .footer_div3 {
         margin-bottom: 20px;
     }
+
+    .footer_div2{
+        margin-left: 20px;
+    }
+    
+    .footer_div3{
+        margin-left: 20px;
+    }
+
     .footer_logo img {
         width: 69px;
         height: 96px;
@@ -853,3 +870,5 @@ header {
         cursor: pointer;
     }
 }
+
+/* footer end with responsive */
