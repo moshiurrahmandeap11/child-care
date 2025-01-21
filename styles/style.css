@@ -136,59 +136,56 @@ header{
 
 /* hero / banner section start */
 
-.banner{
+/* প্রাথমিক স্টাইল */
+.banner {
     width: 100%;
     height: auto;
     margin-bottom: 3.8rem;
 }
-.banner_container{
+.banner_container {
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.banner_textarea{
+.banner_textarea {
     margin-left: -2.3rem;
     max-width: 50%;
 }
-
-.banner_image{
+.banner_image {
     margin-right: -2.3rem;
     max-width: 45%;
 }
-
-.banner_heading{
+.banner_heading {
     font-weight: 700;
     font-size: 3.5rem;
     line-height: 3.75rem;
     color: rgb(17, 17, 17);
-    width: 640px;
-    height: 183px;
+    width: 100%; /* পূর্ণ প্রস্থে করুন */
+    height: auto; /* উচ্চতা স্বয়ংক্রিয় করে দিন */
     margin-bottom: 1.5rem;
+    text-align: left; /* টেক্সট বাম দিকে রাখুন */
+    margin-left: 0; /* মার্জিন ঠিক করুন */
 }
-
-.bannerspan1{
+.bannerspan1 {
     color: rgb(254, 163, 1);
 }
-
-.bannerspan2{
+.bannerspan2 {
     color: rgb(1, 172, 253);
 }
-
-.banner_description{
-    width: 640px;
-    height: 50px;
+.banner_description {
+    width: 100%; /* পূর্ণ প্রস্থে করুন */
+    height: auto; /* উচ্চতা স্বয়ংক্রিয় করে দিন */
     font-weight: normal;
     font-size: 1.3rem;
     line-height: 1.55rem;
     color: rgb(17, 17, 17);
     text-align: left;
     margin-bottom: 1.5rem;
+    margin-left: 0; /* মার্জিন ঠিক করুন */
 }
-
-.banner_btn{
+.banner_btn {
     width: 197px;
     height: 50px;
     font-weight: 700;
@@ -200,15 +197,33 @@ header{
 }
 
 /* responsive for mobile */
-
 @media screen and (max-width: 576px) {
-    .banner_container{
+    .banner_container {
         flex-direction: column-reverse;
+        text-align: center; /* টেক্সট কেন্দ্রীভূত করুন */
+    }
+    .banner_textarea, .banner_image {
+        max-width: 100%; /* পূর্ণ প্রস্থে করুন */
+        margin: 0 auto; /* মার্জিন ঠিক করুন */
+    }
+    .banner_image img {
+        width: 70%;
+    }
+    .banner_heading {
+        width: 100%; /* পূর্ণ প্রস্থে করুন */
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 1.1rem;
+        text-align: center;
+        margin-left: 0; /* মার্জিন ঠিক করুন */
+    }
+    .banner_description {
+        width: 100%; /* পূর্ণ প্রস্থে করুন */
+        height: auto;
+        font-weight: 500;
+        font-size: 0.9rem;
+        line-height: 1.1rem;
         text-align: center;
     }
-
-    .banner_textarea, .banner_image{
-        max-width: 100%;
-    }
-
 }
