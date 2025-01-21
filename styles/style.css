@@ -211,6 +211,8 @@ header {
     color: rgb(255, 255, 255);
     background-color: rgb(17, 17, 17);
     border-radius: 0.7rem;
+    border: none;
+    outline: none;
 }
 
 /* responsive for mobile */
