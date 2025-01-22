@@ -733,6 +733,14 @@ marquee{
     margin-left: 230px;
 }
 
+.footer_div2 ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
 .footer_div3{
     margin-left: 120px;
 }
